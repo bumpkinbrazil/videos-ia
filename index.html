@@ -5,10 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vídeos com IA</title>
 <meta name="description" content="Combo de 2 ebooks — Vídeos com IA no Celular (YouTube Create) e Vídeos com IA no Google Vids. Método prático para planejar, gravar, editar e publicar vídeos com IA direto do celular.">
-<meta property="og:title" content="Vídeos com IA">
+<meta property="og:title" content="Vídeos com IA — Combo com 2 ebooks">
 <meta property="og:description" content="Combo de 2 ebooks — Vídeos com IA no Celular (YouTube Create) e Vídeos com IA no Google Vids. Método prático para planejar, gravar, editar e publicar vídeos com IA direto do celular.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="og-image.jpg">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
@@ -257,7 +261,7 @@
   .price-flag{
     position:absolute;top:14px;right:-14px;z-index:3;
     background:var(--coral);color:#fff;font-family:'JetBrains Mono';font-weight:700;
-    font-size:10.5px;letter-spacing:.01em;white-space:nowrap;
+    font-size:12px;white-space:nowrap;
     padding:6px 12px 6px 16px;border-radius:6px 0 0 6px;
     box-shadow:0 8px 18px -6px hsl(var(--shadow-c) / .5);
   }
@@ -445,6 +449,37 @@
   .pay-chip{font-family:'JetBrains Mono';font-size:11px;border:1px solid var(--border);border-radius:7px;padding:4px 9px;color:var(--text-muted);}
   .fine{color:var(--text-faint);font-size:12px;margin-top:18px;max-width:70ch;line-height:1.6;}
 
+  /* ===== Author / credibility ===== */
+  .author-card{
+    display:flex;gap:20px;align-items:flex-start;
+    background:var(--surface);border:1px solid var(--border);border-radius:18px;
+    padding:26px 28px;max-width:760px;margin:0 auto;
+  }
+  .author-avatar{
+    width:52px;height:52px;border-radius:14px;flex:none;
+    background:var(--accent-soft);display:flex;align-items:center;justify-content:center;font-size:24px;
+  }
+  .author-kicker{
+    font-family:'JetBrains Mono';font-size:12px;font-weight:700;color:var(--accent-strong);
+    text-transform:uppercase;letter-spacing:.06em;margin:0 0 8px;
+  }
+  .author-text{margin:0;color:var(--text);font-size:15px;line-height:1.6;}
+  @media (max-width:560px){ .author-card{flex-direction:column;align-items:flex-start;padding:22px;} }
+
+  /* ===== Method scroll hint ===== */
+  .method-wrap{position:relative;}
+  .method-hint{
+    display:none;margin:10px 0 0;text-align:center;font-size:12.5px;color:var(--text-faint);
+  }
+  @media (max-width:900px){
+    .method-wrap::after{
+      content:"";position:absolute;top:0;right:0;bottom:6px;width:56px;
+      background:linear-gradient(90deg, transparent, var(--bg-soft));
+      pointer-events:none;
+    }
+    .method-hint{display:block;}
+  }
+
   /* ===== Hero glow ===== */
   .hero-glow{
     position:absolute;inset:-25% -10%;z-index:-1;pointer-events:none;
@@ -528,7 +563,7 @@
 
 <!-- Sticky urgency bar -->
 <div class="topbar">
-  <a class="topbar-inner" href="https://pay.kiwify.com.br/yr7q4n3" target="_blank" rel="noopener noreferrer">
+  <a class="topbar-inner" href="https://pay.kiwify.com.br/yr7q4n3">
     <span>🎟️ Válido para as <strong>100 primeiras pessoas</strong> — <span class="topbar-price">de <s>R$299,90</s> por <strong>R$47,90</strong></span></span>
     <span class="topbar-cta">Quero garantir →</span>
   </a>
@@ -551,7 +586,7 @@
       <p class="micro" style="margin-top:6px;">🎟️ Esse valor vale só para as <strong>100 primeiras pessoas</strong> — depois volta para R$299,90</p>
 
       <div class="hero-cta">
-        <a href="https://pay.kiwify.com.br/yr7q4n3" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        <a href="https://pay.kiwify.com.br/yr7q4n3" class="btn btn-primary">
           Quero os 2 ebooks por R$ 47,90
         </a>
         <span class="micro">🔒 Pagamento único · acesso imediato após a confirmação</span>
@@ -566,7 +601,7 @@
     </div>
 
     <div class="book-stage">
-      <div class="price-flag">TEMPO LIMITADO</div>
+      <div class="price-flag">100 VAGAS</div>
       <div class="book b2">
         <div class="book__spine"></div>
         <div class="book__pages"></div>
@@ -639,6 +674,19 @@
       “Ao terminar a jornada, você terá um processo repetível para sair de uma ideia e chegar a um vídeo publicado — com roteiro, gravação, cortes, legendas, áudio, identidade visual e revisão. Você não precisa dominar edição antes de começar.”
       <cite>— a promessa dos ebooks Vídeos com IA</cite>
     </blockquote>
+  </div>
+</section>
+
+<!-- ================= CREDIBILIDADE ================= -->
+<section style="padding-top:0;padding-bottom:0;">
+  <div class="wrap">
+    <div class="author-card reveal">
+      <div class="author-avatar" aria-hidden="true">🎬</div>
+      <div>
+        <p class="author-kicker">Por trás do método</p>
+        <p class="author-text">Testado na prática, direto no celular — sem equipe, sem estúdio, sem editor profissional contratado. O vídeo desta página foi feito com o mesmo processo ensinado nos ebooks: roteiro, gravação com avatar de IA, corte e legenda, do início ao fim no celular.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -726,6 +774,7 @@
         <div class="step"><span class="n num">7</span><p>Revise como espectador</p></div>
       </div>
     </div>
+    <p class="method-hint">← arraste para o lado para ver todas as 7 etapas →</p>
   </div>
 </section>
 
@@ -788,7 +837,7 @@
         <span class="price-new num">R$ 47,90</span>
       </div>
       <div class="spots-badge">🎟️ Condição válida para as <strong>100 primeiras pessoas</strong></div>
-      <a href="https://pay.kiwify.com.br/yr7q4n3" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-wide">Quero garantir por R$ 47,90</a>
+      <a href="https://pay.kiwify.com.br/yr7q4n3" class="btn btn-primary btn-wide">Quero garantir por R$ 47,90</a>
       <div class="guarantee">🛡️ Garantia de 7 dias — não gostou, devolvemos 100% do valor</div>
     </div>
   </div>
@@ -836,7 +885,7 @@
     <span class="eyebrow">Última chamada</span>
     <h2 style="margin-top:16px;">Comece pelo primeiro vídeo, não pela perfeição.</h2>
     <p>Os dois ebooks, os prompts, os templates e o calendário de 30 dias por R$ 47,90 — condição válida para as 100 primeiras pessoas.</p>
-    <a href="https://pay.kiwify.com.br/yr7q4n3" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Quero os 2 ebooks agora</a>
+    <a href="https://pay.kiwify.com.br/yr7q4n3" class="btn btn-primary">Quero os 2 ebooks agora</a>
   </div>
 </section>
 
@@ -855,7 +904,7 @@
 </footer>
 
 <div class="mobile-sticky-cta" id="mobileStickyCta">
-  <a href="https://pay.kiwify.com.br/yr7q4n3" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+  <a href="https://pay.kiwify.com.br/yr7q4n3" class="btn btn-primary">
     <span class="msc-price num">R$ 47,90</span><span class="msc-sep">·</span>Quero garantir →
   </a>
 </div>
